@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- PWA  -->
 <meta name="theme-color" content="#6777ef"/>
 <link rel="apple-touch-icon" href="{{ asset('corinthians.png') }}">
@@ -15,12 +16,12 @@
    
     
     <link rel="stylesheet" href="/css/login.css">
-
+    <link rel="icon" href="/img/spotlighticon.png" type="image/png">
 
 
   
 
- 
+    @livewireStyles
 
 
 </head>
@@ -52,5 +53,5 @@
 
     
 </script>
-
+@livewireScripts 
 </html>
